@@ -4,5 +4,5 @@ Atmega32 full peripheral accessing code &amp; Some running hardware functionalit
 ## Notes
 
 
-#######Finish
+########Finish
 
