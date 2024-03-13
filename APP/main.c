@@ -57,34 +57,24 @@ void SEGMENT_DISPLAY_2(unsigned char n)
 	PORTC_PR=SEGNUMBERS[n%10];
 	_delay_ms(1);
 }
-void ICU_Func(void);
 
 
 
 int main(void)
 {
-	// send :
+	
 	sei() ;
 	DIO_Init();
 	LCD_Init();
 	UART_Init();
 	SPI_InitMaster();
-	//SPI_InitSlave();
-	//ADC_Init(VREF_AVCC,ADC_SCALER_8);
-	//Timer0_Init(TIMER0_NORMAL_MODE,TIMER0_SCALER_8,OCO_TOGGLE);
-	//Timer1_Init(TIMER1_NORMAL_MODE,TIMER1_SCALER_8,OCRA_DISCONNECTED,OCRB_DISCONNECTED);
+
+	//Your APP code
 	
-	u8 i=0,x=0,y=0;
-	y='a';
-	LCD_WriteString("Mastr");
 	while (1) 
 	{
 		
 		
-		SPI_SendReceive(y);
-		y++;
-		_delay_ms(100);
-		/*LCD_Go_To(1,0);
-		LCD_WriteChar(x);*/
+		
 	}
 }
